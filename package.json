@@ -1,0 +1,25 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Recipe web application",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ap221882/forkify-app-vanillaJS.git"
+  },
+  "author": "Ajay Pathak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ap221882/forkify-app-vanillaJS/issues"
+  },
+  "homepage": "https://github.com/ap221882/forkify-app-vanillaJS#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "^2.4.0",
+    "sass": "^1.26.10"
+  }
+}
