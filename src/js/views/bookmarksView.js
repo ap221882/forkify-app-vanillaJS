@@ -5,8 +5,12 @@ class BookmarksView extends View {
   _parentElement = document.querySelector('.bookmarks__list');
   _errorMessage = 'No recipes found for your query. Please try again';
   _message = '';
+
+  addHandlerRender(handler) {
+    window.addEventListener('load', handler);
+  }
   _generateMarkup() {
-    console.log(this._data);
+    // console.log(this._data);
     return this._data.map(this._generateMarkupPreview).join('');
   }
   _generateMarkupPreview(result) {
