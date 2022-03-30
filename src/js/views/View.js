@@ -22,9 +22,9 @@ export default class View {
     const newMarkup = this._generateMarkup();
     const newDOM = document.createRange().createContextualFragment(newMarkup);
     const newElements = newDOM.querySelectorAll('*');
-    console.log(newElements);
+    // console.log(newElements);
     const curElements = this._parentElement.querySelectorAll('*');
-    console.log(curElements);
+    // console.log(curElements);
     newElements.forEach((newEl, i) => {
       const curEl = curElements[i];
       // console.log(curEl, newEl.isEqualNode(curEl));
@@ -36,7 +36,7 @@ export default class View {
       }
       if (!newEl.isEqualNode(curEl)) {
         // console.log(newEl.attributes);
-        console.log(Array.from(newEl.attributes));
+        // console.log(Array.from(newEl.attributes));
         Array.from(newEl.attributes).forEach(attr =>
           curEl.setAttribute(attr.name, attr.value)
         );
